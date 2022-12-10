@@ -4,8 +4,6 @@ library(readr)
 library(nflreadr)
 options(scipen = 9999)
 
-pbp_99 <- read.csv("nfl-analytics-project/1999.csv")
-
 head(pbp_99)
 colnames(pbp_99)
 
@@ -21,6 +19,7 @@ game_state <- c(
     "wind",
     "fourth_down",
     "roof",
+    "epa",
     "score_differential",
     "field_goal_result",        # Y1
     "fourth_down_converted"     # Y2
